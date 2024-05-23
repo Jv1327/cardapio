@@ -12,7 +12,7 @@ const fetchData = async (): AxiosPromise<FoodData[]> => {
 export function useFoodData(){
     const query = useQuery({
         queryFn: fetchData,
-        queryKey: ['Food-data'],
+        queryKey: ['food-data'],
         retry: 2
     })
 
